@@ -1,0 +1,97 @@
+<! DOCTYPE html>
+  <html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ejercicio Fizz Buzz</title>
+  </head>
+
+  <body>
+    <h1>Ejercicio Fizz Buzz</h1>
+    <p>Imprimir numeros de 1 al 100.<br />Si son múltiplos de 3 escribir Fizz, si son de 5 escribir Buzz, sin son ambos FizzBuzz</p>
+    <h2>Solucion 1</h2>
+    <script>
+      var numero=0;
+      while (numero<=100) {
+		    
+        if (numero>0) {  //pregunto que el primero no sea 0
+        
+          //Busco multiplos de 3 y 5
+          if (((numero % 3)==0) && ((numero % 5)==0)) {
+            document.write("FizzBuzz <br />");
+          }else if ((numero % 3)==0) {
+            document.write("Fizz <br />");
+          }else if ((numero % 5)==0) {
+            document.write("buzz <br />");
+          }else{
+            document.write(numero+"<br />");
+          }
+        }
+        numero++;
+      }
+
+    </script>
+    <h2>Solucion 2</h2>
+    <script>
+     
+      for(var numero=0; numero<=100; numero++) {
+
+        if (((numero % 3)==0) && ((numero % 5)==0)) {
+          document.write("FizzBuzz <br />");
+        }else if ((numero % 3)==0) {
+          document.write("Fizz <br />");
+        }else if ((numero % 5)==0) {
+          document.write("buzz <br />");
+        }else{
+          document.write(numero+"<br />");
+        }
+      }
+    </script>  
+    <script>
+     /* for (let i = 1; i <= 100; i++) {
+        const fizz = i % 3 == 0 ? "Fizz" : "";
+        const buzz = i % 5 == 0 ? "Buzz" : "";
+        document.write(fizz || buzz ? fizz + buzz : i);
+      }*/
+
+    </script>
+     <h2>Solucion 3</h2>
+     <script>
+       var numero=0;
+       while (numero<=100) {
+         
+         if (numero>0) {
+         
+          multiplo(numero);
+         }
+         numero++;
+       }
+       function multiplo(numero) {
+        /*#########################
+        Funcion Multiplo
+        Parametro de entrada= numero
+        Calcula multiplos de 3, 5 y ambos
+        Fabio 21/04/2023
+        ############################*/
+
+
+           if (((numero % 3)==0) && ((numero % 5)==0)) {
+            document.write("FizzBuzz <br />");
+           }else if ((numero % 3)==0) {
+             document.write("Fizz <br />");
+           }else if ((numero % 5)==0) {
+             document.write("buzz <br />");
+           }else{
+             document.write(numero+"<br />");
+           }
+        //return print; 
+        }
+         
+      
+
+     </script>
+     
+  </body>
+
+  </html>

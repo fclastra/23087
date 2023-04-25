@@ -1,0 +1,58 @@
+<! DOCTYPE html>
+	<html lang="es">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Hola - Contacto</title>
+
+	</head>
+
+	<body>
+		<section>
+			<h1>Página de Contacto</h1>
+			<p>Complete sus datos:</p>
+			<form action="formularios.html" method="post" enctype="multipart/form-data">
+				<label for="nombreusurio">Nombre:</label>
+				<input type="text" id="nombreusurio" name="nombre" placeholder="escriba su nombre" required><br><br>
+				<label for="lname">Apellido:</label>
+				<input type="text" id="lname" name="apellido"><br><br>
+				<label for="mail">Email:</label>
+				<input type="email" id="mail" name="mail"><br><br>
+				<label for="fecha">Fecha:</label>
+				<input type="date" id="fecha" name="fecha"><br><br>
+				<label for="detalle">Detalle:</label>
+				<textarea name="detalle" rows="10">aaaaaa</textarea><br><br>
+				
+				<input type="radio" id="lname" name="edad" value="1">entre 20 y 30<br><br>
+                <input type="radio" id="lname" name="edad" value="2" checked>entre 31 y 50<br><br>
+				
+				<input type="checkbox" id="lname2" name="lname2" value="1" checked>Opcion 1<br><br>
+				<input type="checkbox" id="lname3" name="lname3" value="2" >Opcion 2<br><br>
+				
+				<select name="seleccionar">
+                    <option value="1">opcion 1</option>
+					<option value="2">opcion 2</option>
+
+				</select><br><br>
+				<input type="file" id="dd" name="file" ><br><br>
+
+				<input type="submit" value="Enviar">
+				<input type="reset" value="borrar">
+			</form>
+
+
+		</section>
+		<footer>
+
+		</footer>
+	</body>
+
+	</html>
+	<!--
+	application/x-www-form-urlencoded 	Default. All characters are encoded before sent (spaces are converted to "+" symbols, and special characters are converted to ASCII HEX values)
+
+	multipart/form-data 	 This value is necessary if the user will upload a file through the form
+
+text/plain 	Sends data without any encoding at all. Not recommended-->

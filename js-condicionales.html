@@ -1,0 +1,206 @@
+<! DOCTYPE html>
+<html>
+  <head>
+    <title>Título de la página</title>
+    
+     </head>
+  <body>
+    <h1>Variables en programación</h1>
+     
+     <script>
+    /*  bababbabaaab   */
+
+       var nota_alumno = 9;     
+       var nombre="Fabio";
+       
+       var nota3="5";
+       var suma=nota_alumno+nota3;
+ 
+document.write("suma= "+suma);
+document.write("<br />");
+document.write("<br />");
+     </script> 
+
+
+ 
+     
+     <script>
+
+   var notas= 4;
+
+  
+   
+// Condición (si nota es mayor o igual a 5)
+/*if (nota >= 5) {
+  document.write("¡Estoy aprobado!");
+}
+document.write(
+  "<br />");
+
+if (notas < 5) {
+  // Acción A (nota es menor que 5)
+  calificacion = "suspendido";
+} else {
+  // Acción B: Cualquier otro caso a A (nota es mayor o igual que 5)
+  calificacion = "aprobado";
+}
+
+document.write("Estoy", calificacion);
+document.write("<br />");
+document.write("<br />");
+
+
+var nota = 5.56;
+var frase = "He obtenido un ";
+  
+if ((nota < 5.55) &&  (nota > 3) ){
+  calificacion = "Insuficiente menos";
+} else {
+  calificacion = "Sobresaliente";
+}
+
+document.write(frase, calificacion);      
+document.write("<br />");
+
+var res= calificacion.toUpperCase();
+document.write(frase, res); 
+
+/*
+var nota = 4;
+var frase = "He obtenido un ";
+
+switch (nota) {
+  case 10:
+    calificacion = "Sobresaliente";
+    break;
+  case 9:
+  case 8:
+    calificacion = "Notable";
+    break;
+  case 7:
+  case 6:
+    calificacion = "Bien";
+    break;
+  case 5:
+    calificacion = "Suficiente";
+    break;
+  case 4:
+  case 3:
+  case 2:
+  case 1:
+  case 0:
+    calificacion = "Insuficiente";
+    break;
+  default:
+    // Cualquier otro caso
+    calificacion = "Nota errónea";
+    break;
+}
+
+document.write("He obtenido un ", calificacion);
+*/
+let i = 0; // Inicialización de la variable contador
+
+// Condición: Mientras la variable contador sea menor de 5
+
+while (i <= 7) {
+   
+
+  document.write("Valor de i: ", i);
+       
+  if (i==3) {
+      document.write(" "+"Estoy en 3 ");
+  } 
+
+  document.write("<br />");
+  
+
+  i++;  
+}  
+
+
+
+for (i = 0; i <= 7; i++) {
+  document.write("Valor de i:", i);
+  document.write("<br />");
+}    
+
+document.write("<br />");
+document.write("<br />");
+
+
+for (i = 0, j = 5; i < 5; i++, j--) {
+  document.write("Valor de i y j:", i," ", j);
+  document.write("<br />");
+} 
+
+/*
+//var nota = 7;
+document.write("He realizado mi examen. Mi resultado es el siguiente:");
+
+// Nota: Este ejemplo NO es equivalente al ejemplo anterior (leer abajo)
+switch (nota) {
+  case 10:
+    calificacion = "Sobresaliente";
+    break;
+  case 9:
+  case 8:
+    calificacion = "Notable";
+    break;
+  case 7:
+  case 6:
+    calificacion = "Bien";
+    break;
+  case 5:
+    calificacion = "Suficiente";
+    break;
+  case 4:
+  case 3:
+  case 2:
+  case 1:
+  case 0:
+    calificacion = "Insuficiente";
+    break;
+  default:
+    // Cualquier otro caso
+    calificacion = "Nota errónea";
+    break;
+}
+
+document.write("He obtenido un", calificacion);
+
+*/
+              
+    </script>
+    
+    <script>
+      var
+      let
+      const PI=3.14;
+      
+     //Tpos de Variables
+     document.write("Antes: ", p);
+     document.write("<br />");     // Antes: undefined
+     for (let p = 0; p < 3; p++) {
+       document.write("- ", p);
+     }
+     document.write("<br />");      // Durante: 0, 1, 2
+     document.write("Después: ", p);  // Después: undefined
+     document.write("<br />"); 
+     document.write("<br />"); 
+     document.write("<br />");
+
+     /** Opción 2: Bucle con var **/
+     
+     document.write("Antes: ", p); 
+     document.write("<br />");    
+     for (var p = 0; p < 3; p++) {
+       document.write("- ", p);
+     }
+     document.write("<br />");      // Durante: 0, 1, 2
+     document.write("Después: ", p);
+
+     document.write("<br />");  
+   </script>
+  </body>
+</html>
